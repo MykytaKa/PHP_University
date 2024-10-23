@@ -18,7 +18,8 @@ class BankAccount implements AccountInterface {
         }
         $this->balance += $amount;
         echo "Поповнено: $amount {$this->currency}<br>";
-
+    }
+    
     public function withdraw(float $amount) {
         if ($amount <= 0) {
             throw new Exception("Сума зняття повинна бути більшою за нуль.");
