@@ -14,10 +14,6 @@ class SavingsAccount extends BankAccount {
     public function applyInterest() {
         $interest = $this->balance * self::$interestRate;
         $this->balance += $interest;
-<<<<<<< HEAD
         echo "Застосовано відсоткову ставку: $interest {$this->currency}<br>";
-=======
-        echo "Застосовано відсоткову ставку: $interest {$this->currency}\n";
->>>>>>> 117ce011cf614d4206e0b7ef9371bf3524cf7263
     }
 }
