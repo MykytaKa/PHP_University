@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Особистий кабінет</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <h2>Привіт, <span id="username"></span>!</h2>
+    <button onclick="logout()">Вийти</button>
+    <script>
+        $(document).ready(function() {
+            $.get("server/session.php", function(data) {
+                if (data.loggedIn) {
+                    $("#username").text(data.username);
+                } else {
+                    window.location.href = "login.html";
+                }
+            }, "json");
+        });
+    </script>
+</body>
+</html>

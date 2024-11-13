@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+form {
+    margin: 50px;
+    display: inline-block;
+    text-align: left;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin: 20px 0; 
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#registerMessage, #loginMessage {
+    color: red;
+    margin-top: 10px;
+}
