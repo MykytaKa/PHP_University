@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформлення замовлення Нової Пошти</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="formHandler.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Оформлення замовлення Нової Пошти</h2>
+
+    <form id="orderForm">
+        <div class="form-group">
+            <label for="orderNumber">Номер замовлення:</label>
+            <input type="text" id="orderNumber" name="orderNumber" required>
+        </div>
+
+        <div class="form-group">
+            <label for="weight">Вага замовлення (кг):</label>
+            <input type="number" id="weight" name="weight" required>
+        </div>
+
+        <div class="form-group">
+            <label for="city">Місто доставки:</label>
+            <select id="city" name="city" required>
+                <option>...</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="deliveryOption">Варіант доставки:</label>
+            <select id="deliveryOption" name="deliveryOption" required>
+                <option>...</option>
+                <option value="Відділення">Відділення</option>
+                <option value="Поштомат">Поштомат</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="branch">Відділення/Поштомат:</label>
+            <select id="branch" name="branch" required>
+                <option>...</option>
+            </select>
+        </div>
+
+        <button type="submit" class="submit-btn">Оформити замовлення</button>
+    </form>
+</div>
+
+</body>
+</html>
